@@ -1,0 +1,120 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.editor {
+    width: 60%;
+    max-width: 500px;
+    margin-top: 5em;
+}
+
+
+.editorText {
+    width: 99%;
+    resize: vertical;
+    background-color: hsl(7, 100%, 93%);
+    min-height: 12em;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.75);
+
+}
+
+.editorText:focus {
+    outline: none;
+}
+
+.previewer {
+    width: 70%;
+    max-width: 700px;
+    margin-top: 2em;
+    text-align: left;
+    margin-bottom: 1.5em;
+
+}
+
+.previewerText {
+    padding:  .3em 2em;  
+}
+
+.previewMain {
+    width: 100%;
+    border: 1px solid black;
+    min-height: 24em;
+    background-color: hsl(7, 100%, 93%);
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.75);
+    border: none;
+}
+
+.header {
+    display: grid;
+    place-content: center;
+    align-items: center;
+    justify-items: center;
+
+    grid-template-columns: 1fr 10fr 1fr;
+    height: 2em;
+    background-color: #F99D92;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    padding:  .2em 1em;
+
+}
+
+.header h3 {
+
+    justify-self: flex-start;
+}
+
+.expandIcon{
+
+    height: 40%;
+    width: auto;
+    padding: 0;
+}
+
+.expandIcon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.areaIcon{
+    justify-self: flex-end;
+    height: 30%;
+    width: auto;
+    margin-right: .5em;
+}
+
+.max {
+    width: 90vw;
+    min-height: 90vh;
+    margin: 3em auto;
+}
+
+.editorTextMax {
+    width: 99%;
+    height: 90vh;
+    margin: auto;
+    resize: none;
+    background-color: hsl(7, 100%, 93%);
+    min-height: 12em;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.75);
+}
+
+.min {
+    display: none;
+}
+
+ /* MARKDOWN STYLES */
+
+ #preview {
+    padding: 0 1rem;
+
+}
+
+#preview  img {
+    display: block;
+    max-width: 90%;
+    margin: 2rem auto;
+  }
+
