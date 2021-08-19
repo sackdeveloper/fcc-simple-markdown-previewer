@@ -34,7 +34,7 @@ const Previewer = (props) => {
 
      return (
          //set this className
-    <div className={props.classes} id="preview"> 
+    <div className={props.classes}> 
         <div className="header">
             <div> {preview} </div>
             <h3>Previewer</h3>
@@ -42,7 +42,7 @@ const Previewer = (props) => {
         </div>
 
         <div className="previewMain" >
-            <div className="previewerText" dangerouslySetInnerHTML={markDown(props.input)} />
+            <div id="preview" className="previewerText" dangerouslySetInnerHTML={markDown(props.input)} />
         </div>
         
     </div>
